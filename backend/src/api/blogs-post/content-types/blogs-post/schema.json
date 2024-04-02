@@ -1,0 +1,33 @@
+{
+  "kind": "collectionType",
+  "collectionName": "blogs_posts",
+  "info": {
+    "singularName": "blogs-post",
+    "pluralName": "blogs-posts",
+    "displayName": "BlogsPost"
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "image": {
+      "allowedTypes": [
+        "images"
+      ],
+      "type": "media",
+      "multiple": true,
+      "required": true
+    },
+    "title": {
+      "type": "string",
+      "required": true,
+      "maxLength": 75,
+      "minLength": 5
+    },
+    "description": {
+      "type": "text",
+      "required": true
+    }
+  }
+}
